@@ -1,0 +1,21 @@
+[project]
+name = "qml"
+version = "0.1.0"
+requires-python = ">=3.14,<3.15"
+dependencies = [
+    "numpy",
+    "torch",
+    "matplotlib",
+    "tqdm",
+]
+
+[[tool.uv.index]]
+name = "torch"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "torch" }
+
+[tool.uv]
+package = false
